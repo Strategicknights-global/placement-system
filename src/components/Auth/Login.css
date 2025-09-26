@@ -1,0 +1,139 @@
+/* Full page center alignment */
+body {
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card container */
+.login-card {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Title & subtitle */
+.login-title {
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
+
+.login-subtitle {
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #666;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  font-size: 15px;
+  font-weight: bold; /* Bold text */
+  color: #000; /* Black text */
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.login-card input:focus {
+  border-color: #2575fc;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.login-card button:hover {
+  background: linear-gradient(135deg, #1a5bcc, #4e0bb8);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Top notification banner */
+.notification-banner {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  max-width: 90%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.5s ease;
+}
+
+.notification-banner.success {
+  background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.notification-banner.error {
+  background: linear-gradient(135deg, #dc3545, #b02a37);
+}
+
+.notification-banner .close-btn {
+  margin-left: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  from {
+    transform: translateX(-50%) translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
