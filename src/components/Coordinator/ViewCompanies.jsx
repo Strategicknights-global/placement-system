@@ -232,4 +232,8 @@ const ViewCompanies = () => {
   );
 };
 
+<<<<<<< HEAD
 export default ViewCompanies;
+=======
+export default ViewCompanies;
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591

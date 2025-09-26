@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Ensure full-page and scrollable layout */
 .page-wrapper {
   display: flex;
@@ -13,11 +14,30 @@
 
 /* Reset parent containers */
 html, body, #root {
+=======
+/* Ensure full-page and central layout */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Reset parent box if needed */
+body, html, #root {
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+<<<<<<< HEAD
   overflow-y: auto;
+=======
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591
 }
 
 /* Main form styling */
@@ -30,7 +50,10 @@ html, body, #root {
   max-width: 600px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591
 /* Heading */
 .student-profile-form h2 {
   margin-bottom: 25px;

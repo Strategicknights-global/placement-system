@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import AddCompanyForm from "../components/Coordinator/AddCompanyForm";
+<<<<<<< HEAD
 import ViewCompanies from "../components/Coordinator/Viewcompanies";
 import ViewAppliedStudents from "../components/Coordinator/ViewAppliedStudents";
+=======
+import ViewCompanies from "../components/Coordinator/ViewCompanies";
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { useNavigate } from "react-router-dom";
@@ -37,12 +41,15 @@ const CoordinatorDashboard = () => {
           >
             View Companies
           </button>
+<<<<<<< HEAD
           <button
             className={activeTab === 'applied' ? 'active' : ''}
             onClick={() => setActiveTab('applied')}
           >
             View Applied Students
           </button>
+=======
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591
           <button onClick={handleLogout} className="logout-btn">
             Logout
           </button>
@@ -52,7 +59,10 @@ const CoordinatorDashboard = () => {
       <main className="coordinator-main">
         {activeTab === 'add' && <AddCompanyForm />}
         {activeTab === 'view' && <ViewCompanies />}
+<<<<<<< HEAD
         {activeTab === 'applied' && <ViewAppliedStudents />}
+=======
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591
       </main>
     </div>
   );

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { db } from './config';
+=======
+// src/firebase/firestore.js
+import { db } from './config'; // ✅ Only import db from config
+>>>>>>> 89b9e1c5302752ea60348e64a1ad41e1f39ed591
 
 import {
   collection,
